@@ -1,0 +1,165 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: scroll;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.main{
+    position: absolute; 
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+  
+.imgContainer {
+    position: relative;
+    display:cover;  
+
+    background-image: url("./portfolio-pictures/places%20pictures/peru.JPG");
+    overflow: hidden;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.imgContainer box {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background: rgba(12, 53, 80, 0.8); 
+    width: 48%; 
+    height: 80%; 
+}
+
+arrowButton {
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+    position: relative;
+    display: block;
+    width: auto;
+    height: 50px;
+    background: black;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+arrowButton:before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 25px solid black;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+
+arrowButton:hover{
+    background: white;
+    transform: translateX(-20px);
+}
+arrowButton:hover:before{
+    border-right: 25px solid white;
+}
+
+.downArrow {
+  position: absolute;
+  border: solid #00e6e6;
+  border-width: 0 1vh 1vh 0;
+  display: inline-block;
+  padding: 1vh;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-top: 3vh;
+}
+.downArrow:hover{
+  margin-top: 4vh;
+}
+
+.rowFrame {
+  position: relative;
+  width:100%;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  margin-top: 100px; 
+}
+
+.rowFrame column {
+  display: inline-block;
+  min-width: 250px;
+  width: 30vh; 
+  max-width: 300px;
+  min-height: 300px; 
+  height: 40vh; 
+  max-height: 400px; 
+
+  padding: 10px;
+  margin-left: 25px;
+  padding-top: 25px;
+  background-color: white;
+  /*box-shadow: 0px 0px 6px #9A9999, 0px 0px 10px #9A9999;/*/
+  text-align:center;
+}
+
+.rowFrame h2 {
+    text-align: center; 
+    color: black; 
+    font-weight: bold; 
+    font-size: 25px; 
+    margin-top: 20px; 
+}
+
+.rowFrame a{
+    text-align: center; 
+    color: black;
+    font-size: 20px; 
+    text-decoration: none;
+    
+}
+
+.intro{
+  position: relative; 
+  text-align: center;
+  display: inline-block;
+}
+.intro p{ 
+  color: white;
+}
+.intro a{ 
+  text-decoration: none;
+  color: black;
+}
+.intro introButton{ 
+    position: relative;
+    display: block;
+    width: auto;
+    height: 50px;
+    background: white;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}

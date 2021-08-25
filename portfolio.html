@@ -1,0 +1,503 @@
+<html> 
+    <!-- edit header description -->
+    <!-- edit frontpage description -->
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./portfolio.css" />
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src = './jquery.mixitup.min.js'></script>
+        <script src="./portfolio.js"></script>
+
+        <title>Ellie T. Xu - Portfolio</title>
+        <meta name="keywords" content="Ellie Xu, Ellie T. Xu, Waterloo, mechatronics, psychology, university of Waterloo, garth webb, garth webb secondary school, ellie xu, engineer"/>
+        <meta name="description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="Ellie T. Xu"/>
+        <meta name="twitter:description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta property="og:description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta property="og:title" content="Ellie T. Xu"/>
+
+    </head>
+    <body>
+        <section class="portfolio-section">
+            <div class = "navigation"> 
+                <a href = "./index.html">Home</a>
+            </div>
+            <div class="container">
+    <!--         <h2 class="title">Portfolio</h2> -->
+                <span class="hr-role"></span>
+                <div class="portfolio-tab">
+                    <ul id="filters" class="clearfix">
+                        <li class="filter active" data-filter=".work, .projects, .teams, .achivements">all</li>
+                        <li class="filter" data-filter=".work">Work Experience</li>
+                        <li class="filter" data-filter=".projects">Projects</li>
+                        <li class="filter" data-filter=".teams">Teams & Clubs</li>
+                        <li class="filter" data-filter=".achivements">Notable Awards & Milestones</li>
+                    </ul>
+                    </div>
+                    <div class="portfolio-grid">
+                    <div class="portfolio work" data-cat="work">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/raspberrypi.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>IOT Developer at LimeTAC Corp.</h4>
+                            <span class="text-category">May 2021 - Present</span>
+                            <!-- <a href="./portfolio-pages/limetac.html" class="template-btn" target="_self">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/eat_out.png')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Eat-Out!</h4>
+                            <span class="text-category">Python, Web-Scraping</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio work" data-cat="work">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/office worker.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Software Developer at the Ontario Ministry of Health </h4>
+                            <span class="text-category">Sept 2020 - Dec 2020</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/teamwork.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Software Team Member at UWAFT</h4>
+                            <span class="text-category">Sept 2020 - Nov 2020</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio work" data-cat="work">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/soldering.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Hardware Engineer at AOMS Technologies </h4>
+                            <span class="text-category">Jan 2020 - Apri 2020</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/solidworks.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Mechanical Team Member at WatLock</h4>
+                            <span class="text-category">Sept 2019 - Dec 2019</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio work" data-cat="work">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/coding.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Intern at WentWorth-Halton X-Ray and Ultrasound Clinic</h4>
+                            <span class="text-category">June 2018 - Aug 2018</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/frc pic.png')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Mechanical Team Member at FIRST Robotics Team</h4>
+                            <span class="text-category">Sept 2015 - June 2018</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/codia.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>CODIA: Modulated Remote Assistant</h4>
+                            <span class="text-category">Inventor, Arduino, 3D Printing, PCB Design, Shop Skills</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/crowdmotions.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Crowdmotions: Smart Reviewer</h4>
+                            <span class="text-category">Java</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/emotions.jpeg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Cuckoos: Twitter Sentiment Analyzer</h4>
+                            <span class="text-category">Python, Beautiful-Soup</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/thermo.png')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Thermoelectric Heater, Cooler, Generator 3 in 1!</h4>
+                            <span class="text-category">Thermoelectric Modules, ESP3266, Arduino, Electrical Design </span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/ar nav.png'); background-color: white;"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>AR Navigation: Never Get Lost Indoors</h4>
+                            <span class="text-category">Unity, Vuforia, Vuzix Blade AR Glasses</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/stock.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Tulip and Carnation: Stock Simulators</h4>
+                            <span class="text-category">Python</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/toycar.PNG')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Toy Car</h4>
+                            <span class="text-category">Electrical Design, RF 433MHz </span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/enigma writer.JPG')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Enigma Writer</h4>
+                            <span class="text-category">VEX, Lego EV3, RobotC</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/tic tac toe (1).jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Tic Tac Toe Mobile Game</h4>
+                            <span class="text-category">Unity</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/good doggo.png')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Good Doggo: Automated Toy to Entertain Your Aborable Dog</h4>
+                            <span class="text-category">Arduino, Inventor</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/candy.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Remote Candy Dispenser</h4>
+                            <span class="text-category">Arduino, ESP3622</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/light flicker.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Automatic Light Switch</h4>
+                            <span class="text-category">Arduino, Motion Sensor</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio projects" data-cat="projects">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/2048.png')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>2048</h4>
+                            <span class="text-category">Java</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/HOSA (3).jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Founder and President of HOSA: Future Health Professionals</h4>
+                            <span class="text-category">2017 - 2019</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/stem (1).JPG')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Co-Founder and Co-President of Stem Club</h4>
+                            <span class="text-category">2016 - 2019</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/basef 1.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Co-Founder of BASEf Team: school based team for the local science fair</h4>
+                            <span class="text-category">2015 - 2019</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/buzzer.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Reach for the Top: Trivia Team</h4>
+                            <span class="text-category">2015 - 2019</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/STEM (2).JPG')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Co-President and Communications Manager of Science Council</h4>
+                            <span class="text-category">2017 - 2019</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/writing.jpeg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Writer's Guild</h4>
+                            <span class="text-category">2015 - 2019</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/musical.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Fiddler on the Roof Musical</h4>
+                            <span class="text-category">2017</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio teams" data-cat="teams">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/cross country.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Cross Country</h4>
+                            <span class="text-category">2015 & 2018</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio achivements" data-cat="achivements">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/duke of ed.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Silver & Bronze: Duke of Edinburgh's International Award</h4>
+                            <span class="text-category">Award</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio achivements" data-cat="achivements">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/tedx.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Speaker at TEDx Youth</h4>
+                            <span class="text-category">Milestone</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio achivements" data-cat="achivements">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/art/IMG_5834.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Secondary School Art Shows</h4>
+                            <span class="text-category">Achivements</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio achivements" data-cat="achivements">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/cwsf.jpg')"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Bronze Medal: Canada Wide Science Fair</h4>
+                            <span class="text-category">Award</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio achivements" data-cat="achivements">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/basef.png'); background-color: white;"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>Gold, 2 Silver, 1 Bronze Medal: Bay Area Science Fair</h4>
+                            <span class="text-category">Award</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio achivements" data-cat="achivements">
+                        <div class="portfolio-wrapper">
+                        <div class="portfolio-bg" style = "background-image: url('./portfolio-pictures/frc power up.png'); background-color: white;"></div>
+                        <div class="label">
+                            <div class="label-text">
+                            <h4>3 FIRST Robotics Awards</h4>
+                            <span class="text-category">Award</span>
+                            <!-- <a href="./portfolio-pages/ministryhealth.html" class="template-btn" target="_blank">View</a> -->
+                            </div>
+                            <div class="label-bg"> </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+        </div>
+    </body>
+</html>
