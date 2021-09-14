@@ -15,9 +15,9 @@ html, body {
 .navigation a{
     text-decoration: none;
     color: var(--highlight-color);
-    font-weight: bold; 
+    font-weight: 500;
     font-size: 2rem; 
-    margin-left: 10vh;
+    margin-left: 70px;
 }
 
   h2 {

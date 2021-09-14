@@ -1,0 +1,80 @@
+:root{
+    --font-color: white; 
+    --highlight-color: #00e6e6;
+    --background-color: black; 
+    --font-color-inverse: black; 
+    --subtitle-color: rgb(180, 180, 180); 
+    margin-right: -1vw; 
+    overflow-x: initial;
+}
+
+.github{
+    background-size: fill;
+    
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.github a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.github .inside{
+    width: 70vw; 
+    align-items: left;
+}
+
+.github img{
+    flex-shrink: 0;
+    height: 20vh;
+    width: auto;
+    object-fit: cover;
+    float: left; 
+    margin: 0;
+    padding: 0; 
+}
+
+.github p{ 
+    color: var(--font-color); 
+    font-size: 4rem;
+    font-weight: 300; 
+    margin: 0; 
+}
+
+.github .inside .column {
+    float: left;
+    margin: 0;
+    padding: 0; 
+    width: auto;
+    text-align: center; 
+    height: 100%; 
+
+
+    min-height: 20vh; 
+    line-height: 20vh; 
+
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center;
+  }
+  
+.github .inside:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.github:hover .inside{
+    width: 75vw; 
+}
+.github:hover img{
+    padding-right: 5vw; 
+
+}
+
+
+
