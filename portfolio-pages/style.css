@@ -137,12 +137,12 @@ ul.a {
     float: left;
     width: auto;
     padding: 10px;
-    color: var(--font-color-inverse); 
+    color: var(--font-color); 
     border-style: solid;
     border-color: var(--highlight-color); 
     border-radius: 1.5rem;
-    background-color: white;
     margin-left: 1vw;
+    margin-bottom: 2vh;
 }
 
 .skills:after{
@@ -151,3 +151,30 @@ ul.a {
     clear: both;
     
 }
+
+.comment{
+    background-color: rgb(54, 54, 54);
+    text-align: left;
+
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.commentBox{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    margin-left: 10vw; 
+    margin-right: 10vw; 
+}
+
+.comment h1{
+    margin-left: 10vw; 
+    color: var(--highlight-color); 
+    font-size: 3rem; 
+    padding-bottom: 2rem; 
+}
+.comment p{
+    color: var(--font-color-inverse); 
+    font-size: 1.5rem; 
+}
+
