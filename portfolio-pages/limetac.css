@@ -60,3 +60,29 @@
     padding-top: 2rem; 
     padding-bottom: 2rem; 
   }
+  
+  .comment{
+      background-color: rgb(54, 54, 54);
+      text-align: left;
+
+      padding: 0.5rem 1rem 1rem 1rem;
+  }
+
+  .commentBox{
+      background-color: rgb(255, 255, 255);
+      padding: 0.5rem 1rem 1rem 1rem;
+      border-radius: 1rem;
+      margin-left: 10vw; 
+      margin-right: 10vw; 
+  }
+
+  .comment h1{
+      margin-left: 10vw; 
+      color: var(--highlight-color); 
+      font-size: 3rem; 
+      padding-bottom: 2rem; 
+  }
+  .comment p{
+      color: var(--font-color-inverse); 
+      font-size: 1.5rem; 
+  }
