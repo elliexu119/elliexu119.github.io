@@ -3,6 +3,10 @@
     overflow-x: initial;
 }
 
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .github{
     background-size: fill;
     

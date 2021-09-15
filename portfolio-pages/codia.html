@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html> 
+    <!-- edit header description -->
+    <!-- edit frontpage description -->
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="stylesheet" type="text/css" href="./codia.css" />
+        <link rel="stylesheet" type="text/css" href="./footer.css" />
+        <script src="../jquery-3.5.1.min.js"></script>
+        <script src = '../jquery.mixitup.min.js'></script>
+
+        <title>Ellie T. Xu - Portfolio</title>
+        <meta name="keywords" content="Ellie Xu, Ellie T. Xu, Waterloo, mechatronics, psychology, university of Waterloo, garth webb, garth webb secondary school, ellie xu, engineer"/>
+        <meta name="description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="Ellie T. Xu"/>
+        <meta name="twitter:description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta property="og:description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta property="og:title" content="Ellie T. Xu"/>
+
+    </head>
+    <body>
+        <div class = "navigation"> 
+            <a href = "../index.html">Home</a>
+            <a href = "../portfolio.html">Portfolio</a>
+        </div>
+
+        <div style = "height: 7vh;"></div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="../portfolio-pictures/codia.jpg">
+              </div>
+            
+            <div class="mySlides fade">
+              <img src="../portfolio-pictures/codia mark i.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../portfolio-pictures/codia glove.jpg"/>
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            <div class = "titleBox">
+                <h1>CODIA: Modulated Robotic Assistant</h1>
+                <h2>2018-2019</h2>
+            </div>
+
+            <div class = "award">
+                <a href = "#award">
+                    <p>Award Winning Project</p>
+                </a>
+                
+            </div>
+
+            <div class = "content" style = "
+                    padding-top: 10vh; 
+                    padding-bottom: 10vh; 
+                    padding-left: 15vw; 
+                    padding-right: 15vw;">
+                <p style = "font-weight: thin;">CODIA is an artificial assistant controlled over a versatile touchless user interface by monitoring hand gestures with customized rings.</p>
+                <p>It is a personal project who was born out of the idea of introducing general purpose robotic assistants to our homes to improve our quality of life. CODIA was designed with a vision in mind of an artificial assistant that would not be barricaded to the majority household by the steep cost of modern robotics and rather be affordable to every family. 
+                    
+            </div>
+
+            <div class = "content" style = "background-color: rgb(53, 44, 31); margin-top: 0;">
+                <div class = "block">
+                    <h1>What it is</h1>
+                    <div class = "skills">
+                        <div class = "skill">Arduino</div>
+                        <div class = "skill">Inventor</div>
+                        <div class = "skill">3D Printing</div>
+                        <div class = "skill">Circuit Design</div>
+                        <div class = "skill">Shop Skills</div>
+
+                    </div>
+                    <embed src="../docs/codia mark ii drawings.pdf" width="500" height="375" type="application/pdf">
+                </div>
+
+                <div class = "block" id = "award"> 
+                    <h1 style = "color:rgb(255, 187, 0)">Award Winning Project</h1>
+                    <ul class = 'a'>
+                        <li>Bronze Medal at the Canada Wide Science Fair</li>
+                        <li>Gold Medal at the regional Bay Area Science and Engineering Fair</li>
+                        <li>all the special awards</li>
+
+                    </ul>
+                </div>
+            </div>
+            <embed src="../docs/CODIA MARK I.pdf" width="500" height="375" type="application/pdf">
+            <embed src="../docs/CODIA MARK II.pdf" width="500" height="375" type="application/pdf">
+            
+            
+    </body>

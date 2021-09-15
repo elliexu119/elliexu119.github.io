@@ -3,12 +3,12 @@
     --highlight-color: #00e6e6;
     --background-color: black; 
     --font-color-inverse: black; 
-    --subtitle-color: rgb(180, 180, 180); 
+    --subtitle-color: rgb(209, 209, 209); 
     --font-weight: 100; 
 }
 
 html, body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "monospace", sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-color: var(--background-color);
