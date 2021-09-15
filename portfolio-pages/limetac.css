@@ -81,6 +81,7 @@
       color: var(--highlight-color); 
       font-size: 3rem; 
       padding-bottom: 2rem; 
+      font-weight: 100;
   }
   .comment p{
       color: var(--font-color-inverse); 

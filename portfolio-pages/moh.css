@@ -1,0 +1,54 @@
+.comment{
+    background-color: rgb(54, 54, 54);
+    text-align: left;
+
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.commentBox{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    margin-left: 10vw; 
+    margin-right: 10vw; 
+}
+
+.comment h1{
+    margin-left: 10vw; 
+    color: var(--highlight-color); 
+    font-size: 3rem; 
+    padding-bottom: 2rem; 
+    font-weight: 100;
+}
+.comment p{
+    color: var(--font-color-inverse); 
+    font-size: 1.5rem; 
+}
+
+.titlePage{
+    height: 60vh;  
+    width: auto;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center;
+    background-color: white;
+    margin-top: 5vh; 
+    display: block; 
+    padding-top: 20vh; 
+}
+
+.titlePage .jobBox{
+    background-color: var(--highlight-color);
+    padding-top: 3vh; 
+    padding-bottom: 20vh;
+}
+
+.titlePage h1{ 
+    text-transform: capitalize;
+    color: var(--font-color-inverse); 
+    font-size: 4rem;
+    font-weight: 1000;
+    margin: 0; 
+    padding: 0; 
+}
