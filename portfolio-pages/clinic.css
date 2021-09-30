@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+}
+
+img {
+    max-width: 30vw; 
+    max-height: 50vh; 
+
+}
+
+.pic2{
+    float: right; 
+
+}
+
+.titlePage{
+    *zoom:1;
+}
+
+.titlePage h1{
+    color: var(--highlight-color);
+    size: 5rem; 
+    font-weight: bold;
+}
+
+.titlePage img{ 
+
+}
+
+.float-my-children > * {
+    float:left;
+    margin-left: 20vw; 
+    margin-right: 1vw;
+}
+
+.titlePage:before,
+.titlePage:after {
+    content: " ";
+    display: table;
+}
+
+.titlePage:after {
+    clear: both;
+}
