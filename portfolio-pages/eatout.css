@@ -75,5 +75,12 @@ html, body {
 
 }
 
+.caption{
+    width: 100vw; 
+}
 
-
+.caption p{ 
+    color: black; 
+    float: right; 
+    margin-right: 2vw; 
+}

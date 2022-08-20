@@ -153,4 +153,37 @@ ul.a {
     
 }
 
+.award {
+    background-image: url('../portfolio-pictures/medal.png');
+    overflow: hidden;
+    background-repeat:no-repeat;
+    background-position: top; 
+    display:cover; 
+    background-size: 100% auto;
 
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+
+    width: 6vw;
+    min-width: 150px; 
+    max-width: 250px;
+
+    margin-right: 1vw;
+    text-align: center;
+}
+
+.award a{
+    text-decoration: none;
+}
+
+.award p{
+    color: black; 
+    font-size: 1.25rem;
+    padding-bottom: 3vh;
+}
+
+.award:hover{
+    margin-bottom: 1rem;
+}
+  

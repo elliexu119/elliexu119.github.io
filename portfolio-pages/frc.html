@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html> 
+    <!-- edit header description -->
+    <!-- edit frontpage description -->
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="stylesheet" type="text/css" href="./frc.css" />
+        <link rel="stylesheet" type="text/css" href="./footer.css" />
+        <script src="../jquery-3.5.1.min.js"></script>
+        <script src = '../jquery.mixitup.min.js'></script>
+
+        <title>Ellie T. Xu - Portfolio</title>
+        <meta name="keywords" content="Ellie Xu, Ellie T. Xu, Waterloo, mechatronics, psychology, university of Waterloo, garth webb, garth webb secondary school, ellie xu, engineer"/>
+        <meta name="description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="Ellie T. Xu"/>
+        <meta name="twitter:description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta property="og:description" content="I'm a mechatronics engineering student from the University of Waterloo."/>
+        <meta property="og:title" content="Ellie T. Xu"/>
+
+    </head>
+
+
+
+    <body>
+        <div class = "navigation"> 
+            <a href = "../index.html">Home</a>
+            <a href = "../portfolio.html">Portfolio</a>
+        </div>
+
+        <div class = "award" style = "left: 0px;">
+            <a href = "#award">
+                <p>Award Winning Project</p>
+            </a>
+        </div>
+
+        <div style = "height: 7vh;"></div>
+
+        <div class = 'banner'> 
+            <h1><span style = "font-style: italic; color: #0471b0">FIRST</span> Robotics</h1>
+            
+        </div>
+
+        <div style = "height: 7vh;"></div>
+
+        <div class = "intro" style = 'margin-bottom: 0; padding-bottom: 0'> 
+            <div class="sidePanel sidePanel-transition" id = 'box1'>
+                <h1>2018</h1>
+            </div>
+
+            <div class="sidePanel sidePanel-transition" id = 'box2'>
+                <h1>2017</h1>
+            </div>
+
+            <div class="sidePanel sidePanel-transition" id = 'box3'>
+                <h1>2016</h1>
+            </div>
+        </div>
+        
+        <div class = "block" id = "award">
+            <h1 style = "color:teal; font-weight: 700;">Award Winning Project</h1>
+            <ul class = 'a'>
+                <li>Canada-Wide Science Fair Senior Excellence Award - Bronze Medal </li>
+                <li>Bay Area Science and Engineering Fair Silver Award of Merit</li>
+                <li>ArcelorMittal Dofasco Engineering Award </li>
+                <li>ArcelorMittal Dofasco Process Automation Award</li>
+                <li>IEEE (Institute of Electrical and Electronic Engineers) Hamilton Section Award </li>
+                <li>Mohawk College Electrotechnology - Computer Engineering Technology Award </li>
+                <li>Procor Engineering Award - Senior</li>
+                <li>Talk.it Computer Engineering Award - First </li>
+                <li>McMaster University Women in Engineering Entrance Award </li>
+                <li>Primary Fluid Systems Award</li>
+                <li>Nikola Tesla Honourable Mention Award</li>
+            </ul>
+        </div>
+
+        <div style = "height: 8vh;"></div>
+
+        <div class="rowFrame" id = "contacts"> 
+            <column>
+                <img style = "height: 120px" src = "../portfolio-pictures/iconv2/github.png">
+                <h2>Github</h2>
+                <a target = "_blank" class="btn btn-success" href = "https://github.com/elliexu119" >github.com/elliexu119</a>
+            </column>
+            <column>
+                <img style = "height: 120px" src = "../portfolio-pictures/iconv2/email.png">
+                <h2>Email</h2>
+                <a>elliexu119@gmail.com</a>
+            </column>
+            <column>
+                <img style = "height: 120px"  src = "../portfolio-pictures/iconv2/linkedin.png">
+                <h2>LinkedIn</h2>
+                <a target = "_blank" class="btn btn-success" href = "http://linkedin.com/in/ellie-t-xu" >ellie-t-xu</a>
+            </column>
+        </div>
+        
+
+    </body>
+
+    <script> 
+
+        if(!!window.IntersectionObserver){
+            let observer = new IntersectionObserver((entries, observer) => { 
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        console.log(entry);
+                        entry.target.classList.add('sidePanel-transition');
+                        return;
+                    } entry.target.classList.remove('sidePanel-transition');
+                }
+                
+                );
+            }, {threshold : 0.2});
+                document.querySelectorAll('.sidePanel').forEach(parentElement => { observer.observe(parentElement) });
+            }
+
+            else document.querySelector('#warning').style.display = 'block';
+                
+    </script> 
+
+</html>
