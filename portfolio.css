@@ -186,8 +186,10 @@ html, body {
     transition: 1s;
     transform: scale(1)
   }
-  .portfolio:hover .portfolio-bg{
-    transform: scale(1.2)
+  @media (hover: hover) and (pointer: fine) {
+    .portfolio:hover .portfolio-bg{
+      transform: scale(1.2)
+    }
   }
   .first .portfolio-bg{
     background-image: url('https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?cs=srgb&dl=accounts-applications-apps-267350.jpg&fm=jpg');
@@ -226,9 +228,17 @@ html, body {
     z-index:500;
     padding:50px 20px;
   }
-  .portfolio:hover .label {
-    opacity: 1;
-    visibility: visible;
+  @media (hover: hover) and (pointer: fine) {
+    .portfolio:hover .label {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  @media (hover: none) {
+    .portfolio .label {
+      opacity: 1;
+      visibility: visible;
+    }
   }
   .portfolio .text-category {
     display:block;
