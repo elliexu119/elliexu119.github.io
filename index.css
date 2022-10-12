@@ -35,10 +35,12 @@ html, body {
     background-position: center; 
     background-attachment: fixed;
 
-    object-fit: cover;
-    width: 100%;
     min-height: 500px; 
     height: 100%; 
+    object-fit: cover;
+    width: 100%;
+
+    
       
 }
 
@@ -118,10 +120,10 @@ html, body {
   border-width: 0 1vh 1vh 0;
   display: inline-block;
   padding: 1vh;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateX(-5px);
   margin-top: 3vh;
 }
+
 .downArrow:hover{
   margin-top: 4vh;
 }
