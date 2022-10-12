@@ -111,24 +111,30 @@ html, body {
   .portfolio-tab ul {
     text-align: center;
     margin-top: 50px;
+    padding: 0; 
   }
-  .portfolio-tab ul li {
-    color: #000;
+
+  .portfolio-tab li {
     background: transparent;
-    display: inline;
+    display: inline-block;
     font-weight: 500;
     text-transform: uppercase;
     padding: 12px 16px;
     border: 2px solid var(--highlight-color);
-    margin: 0 5px;
+    margin: 0 5px 12px;
+    color: var(--font-color);
+
+    white-space: break-word;
     cursor: pointer;
+
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
     -webkit-tap-highlight-color: transparent;
-    color: var(--font-color);
+    
   }
+
   @media (max-width: 575.98px) {
     .portfolio-tab ul li {
       display: block;
