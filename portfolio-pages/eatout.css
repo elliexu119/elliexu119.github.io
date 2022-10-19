@@ -31,7 +31,6 @@ html, body {
     max-width: 700px; 
     float: right;
     height: 100%;
-
 }
 
 
@@ -48,6 +47,7 @@ html, body {
     font-weight: 500;
     text-align: left;
 }
+
 .github{
     background-size: fill;
     
@@ -138,7 +138,7 @@ html, body {
     }
   }
 
-  @media (max-width:600px){
+@media (max-width:600px){
     .github p{ 
         writing-mode: vertical-rl;
         font-size: 100%; 
@@ -152,7 +152,7 @@ html, body {
     .caption p{
         font-size: 0.5rem; 
     }
-    
-  }
+
+}
 
   
