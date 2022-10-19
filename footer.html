@@ -15,16 +15,16 @@
     }
 
     .rowFrame column {
-        margin-left: 2vw;
-        margin-right: 2vw; 
+        margin-left: 1vw;
+        margin-right: 1vw; 
         display: inline-block;
+        vertical-align: top;
         width: 25vw; 
-        height: 40vh; 
-        max-height: 400px; 
-        min-height: 300px; 
+        height: 500px; 
+
         max-width: 300px;
 
-        padding: 10px;
+        padding: 2vw;
         padding-top: 25px;
         background-color: white;
         /*box-shadow: 0px 0px 6px #9A9999, 0px 0px 10px #9A9999;/*/
@@ -45,30 +45,51 @@
         font-size: 3vw; 
         text-decoration: none;
         overflow-wrap: break-word;
+        
     }
 
+    .rowFrame .imgContainer{
+        display: inline-block; 
+        
+        height: auto; 
+        width: 100%;
+    }
     .rowFrame img {
         height: auto; 
         width: 100%;  
         margin: 0; 
         padding: 0; 
     }
+
+    .rowFrame .filler{
+        height: auto; 
+    }
 </style>
 
 <div class="rowFrame" id = "contacts"> 
     <column>
-        <img src = "./portfolio-pictures/iconv2/github.png">
+        <div class = "imgContainer">
+            <img src = "./portfolio-pictures/iconv2/github.png">
+        </div>
         <h2>Github</h2>
         <a target = "_blank" class="btn btn-success" href = "https://github.com/elliexu119" >github.com/elliexu119</a>
+        <div class = "filler"></div>
     </column>
+
     <column>
-        <img src = "./portfolio-pictures/iconv2/email.png">
+        <div class = "imgContainer">
+            <img src = "./portfolio-pictures/iconv2/email.png">
+        </div>
         <h2>Email</h2>
         <a>elliexu119@gmail.com</a>
     </column>
-    <column >
-        <img src = "./portfolio-pictures/iconv2/linkedin.png">
+
+    <column>
+        <div class = "imgContainer">
+            <img src = "./portfolio-pictures/iconv2/linkedin.png">
+        </div>
         <h2>LinkedIn</h2>
         <a target = "_blank" class="btn btn-success" href = "http://linkedin.com/in/ellie-t-xu" >ellie-t-xu</a>
+        <div class = "filler"></div>
     </column>
 </div>
