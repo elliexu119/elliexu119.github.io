@@ -1,12 +1,51 @@
-:root{
-    margin-right: -1vw; 
-    overflow-x: initial;
-}
-
 html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.titlebackground{ 
+    position: relative;
+    display: cover;  
+
+    overflow: hidden;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 30%; 
+
+    min-height: 700px; 
+    height: 70vh; 
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.titlebackground .title { 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 4vw; 
+    padding-right: 4vw; 
+    padding-top: 5vh; 
+    padding-bottom: 5vh; 
+
+    max-width: 700px; 
+    float: right;
+    height: 100%;
+
+}
+
+
+.title h1{
+    color: var(--font-color);
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.title p{
+    color: var(--font-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
 .github{
     background-size: fill;
     
@@ -72,15 +111,31 @@ html, body {
 }
 .github:hover img{
     padding-right: 5vw; 
-
-}
-
-.caption{
-    width: 100vw; 
 }
 
 .caption p{ 
-    color: black; 
-    float: right; 
-    margin-right: 2vw; 
+    color: lightgray; 
+    float: left; 
+    font-size: 0.7rem; 
 }
+
+
+@media (hover: hover) and (pointer: fine) {
+    .titlebackground .title:hover{
+        background-color: rgba(0,0,0, 0.9);
+    }
+
+    .titlebackground{
+        background-position: 30%; 
+    }
+  }
+
+  @media (max-width:600px){
+    .github p{ 
+        writing-mode: vertical-rl;
+        font-size: 100%; 
+    }
+    
+  }
+
+  
