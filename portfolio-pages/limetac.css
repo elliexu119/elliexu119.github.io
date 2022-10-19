@@ -2,32 +2,89 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.titlePage{
-    height: 90vh;  
-    width: auto;
-    text-align: center;
-    display: flex;
-    align-items: center; /* Vertical center alignment */
-    justify-content: center;
+.titleWrapper{
+  text-align: center;
+  height: 90vh;
+  margin-top: 30vh; 
 }
 
-.titlePage h1{ 
-    text-transform: capitalize;
+.typewriter{
+    display: block; 
+}
+
+.typewriter .line {
+  display: inline-block; 
+}
+
+.mobile-display{display:none}
+.desktop-display{display:block}
+
+@media (max-width:575.98px){
+  .desktop-display {display:none}
+  .mobile-display {display:block}
+
+  .typewriter .jobTitle1 {
     color: var(--font-color); 
     font-size: 2rem;
     font-weight: var(--font-weight);
-}
+    width: 0; 
 
-.typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid transparent; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end 2;
+      typing 1.5s steps(20, end) forwards,
+      blinking 1s 1.5;
   }
+
+  .typewriter .jobTitle2 {
+    color: var(--font-color); 
+    font-size: 2rem;
+    font-weight: var(--font-weight);
+    width: 0; 
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+      typing 1.5s steps(20, end) forwards,
+      blinking 1s 1.5;
+    animation-delay: 1.5s;
+  }
+}
+
+  .typewriter .jobTitle{
+    color: var(--font-color); 
+    font-size: 2rem;
+    font-weight: var(--font-weight);
+    width: 0; 
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+      typing 3s steps(20, end) forwards,
+      blinking 1s 3;
+  }
+
+  
+
+.typewriter .jobDates{ 
+    text-transform: capitalize;
+    color: var(--font-color); 
+    font-weight: var(--font-weight);
+    font-size: 1rem; 
+    padding-top: 1vh;
+    width: 0; 
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+      typing 2s steps(20, end) forwards,
+      blinking 1s infinite;
+    animation-delay: 3s;
+}
   
   /* The typing effect */
   @keyframes typing {
@@ -36,9 +93,9 @@ html, body {
   }
   
   /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--highlight-color); }
+  @keyframes blinking {
+    from{ border-color: transparent }
+    to { border-color: var(--highlight-color); }
   }
 
   .block img{
