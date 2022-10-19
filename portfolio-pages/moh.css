@@ -37,7 +37,6 @@ html, body {
     align-items: center; /* Vertical center alignment */
     justify-content: center;
     background-color: white;
-    margin-top: 5vh; 
     display: block; 
     padding-top: 20vh; 
 }
