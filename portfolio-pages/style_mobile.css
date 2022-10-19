@@ -1,0 +1,12 @@
+@media (max-width:600px){
+    .block h1 {
+        font-size: 2rem; 
+    }
+    .block p, li{
+        font-size: 1rem;        
+    }
+    .block h2{}
+    .skill{
+        font-size: 0.7rem; 
+    }
+  }
