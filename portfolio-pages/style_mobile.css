@@ -5,8 +5,20 @@
     .block p, li{
         font-size: 1rem;        
     }
-    .block h2{}
+
+    .block h2{
+        font-size: 1rem; 
+    }
+
     .skill{
         font-size: 0.7rem; 
+    }
+
+    .comment p{
+        font-size: 1rem; 
+    }
+
+    .comment h1{
+        font-size: 2rem; 
     }
   }

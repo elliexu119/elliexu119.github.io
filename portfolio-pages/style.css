@@ -97,8 +97,6 @@ ul.a {
 }
 
 .block h1, h2, p, li{
-    margin-left: 1vw; 
-    margin-right: 1vw; 
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -155,4 +153,26 @@ ul.a {
 .award:hover{
     margin-bottom: 1rem;
 }
-  
+
+.comment{
+    background-color: rgb(54, 54, 54);
+    text-align: left;
+    padding: 1vw 5vw 5vw 5vw; /* top right bottom left*/
+}
+
+.commentBox{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+}
+
+.comment h1{
+    text-align: center; 
+    color: var(--highlight-color); 
+    font-size: 3rem; 
+    font-weight: 100;
+}
+.comment p{
+    color: var(--font-color-inverse); 
+    font-size: 1.5rem; 
+}

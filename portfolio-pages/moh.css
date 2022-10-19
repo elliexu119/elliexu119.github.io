@@ -2,28 +2,6 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.comment{
-    background-color: rgb(54, 54, 54);
-    text-align: left;
-    padding: 1vw 5vw 5vw 5vw; /* top right bottom left*/
-}
-
-.commentBox{
-    background-color: rgb(255, 255, 255);
-    padding: 0.5rem 1rem 1rem 1rem;
-    border-radius: 1rem;
-}
-
-.comment h1{
-    text-align: center; 
-    color: var(--highlight-color); 
-    font-size: 3rem; 
-    font-weight: 100;
-}
-.comment p{
-    color: var(--font-color-inverse); 
-    font-size: 1.5rem; 
-}
 
 .titlePage{
     height: 60vh;  
@@ -67,16 +45,7 @@ html, body {
 @media (max-width:600px){
     .titlePage .jobBox h1{
         font-size: 3rem; 
-    }
-
-    .comment p{
-        font-size: 1rem; 
-    }
-
-    .comment h1{
-        font-size: 2rem; 
-    }
-    
+    }    
   }
 
 
