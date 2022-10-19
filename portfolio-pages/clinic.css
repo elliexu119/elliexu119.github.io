@@ -1,44 +1,64 @@
-body {
+html, body {
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
+    --special-highlight-color: #007d7d;
+    --font-color: black; 
+}
+
+.image-block-lord{ 
+    text-align: center;
+}
+.image-block{
+    display: block; 
+    width: auto;
+    padding-top: 2vh; 
+    padding-bottom: 5vh; 
 }
 
 img {
-    max-width: 30vw; 
-    max-height: 50vh; 
-
+    display: inline-block; 
+    width: 30vw; 
+    padding-left: 10px; 
+    padding-right: 10px; 
 }
 
-.pic2{
-    float: right; 
-
+@media (max-width:575.98px){
+    img{
+        display: block; 
+        width: 80vw; 
+        padding-top: 10px; 
+        padding-bottom: 10px;
+    }
 }
 
 .titlePage{
-    *zoom:1;
+    height: 50vh; 
+    text-align: center; 
+    margin-top: 20vh; 
+    padding-left: 15px; 
+    padding-right: 15px; 
 }
 
 .titlePage h1{
-    color: var(--highlight-color);
-    size: 5rem; 
-    font-weight: bold;
+    color: var(--special-highlight-color);
+    font-weight: var(--font-weight);
+    font-size: 2rem;
 }
 
-.titlePage img{ 
-
+.titlePage .subtitle{
+    color: gray; 
+    size: 1rem; 
 }
 
-.float-my-children > * {
-    float:left;
-    margin-left: 20vw; 
-    margin-right: 1vw;
+hr{
+    margin-top: 0; 
+    width: 50%; 
+    height:1px; 
+    border-width:0; 
+    background-color:lightgray;
 }
 
-.titlePage:before,
-.titlePage:after {
-    content: " ";
-    display: table;
-}
-
-.titlePage:after {
-    clear: both;
+.block{
+    padding-top: 10vh; 
+    background-color: rgb(241, 241, 241)
 }

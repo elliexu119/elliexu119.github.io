@@ -26,15 +26,17 @@
         </script> 
     </head>
     <body>
-        <div class = "navigation"> 
-            <a href = "../index.html">Home</a>
-            <a href = "../portfolio.html">Portfolio</a>
+        <div class = "navigation" style = "background-color: white;"> 
+            <a style = "color: var(--special-highlight-color);" href = "../index.html">Home</a>
+            <a style = "color: var(--special-highlight-color);" href = "../portfolio.html">Portfolio</a>
             <div style = "height: 3vh;"></div>
         </div>
 
-        <div class = "titlePage float-my-children">
-            <img src = "../portfolio-pictures/internships/clinic/booking-program-2.png"/>
-            <div> <h1>Intern at Halton-Wentworth Clinic</h1> </div>
+        <div class = "titlePage">
+            <h1>Internship at</h1>
+            <h1>Wentworth-Halton X-ray and Ultrasound </h1>
+            <hr></hr>
+            <div class = "subtitle">June 2018 - Aug 2018</div>
         </div>
 
         <div class = "block">
@@ -42,10 +44,20 @@
             <div class = "skills">
                 <div class = "skill">Java</div>
                 <div class = "skill">JFrame</div>
+                <div class = "skill">XML</div>
             </div>
-            <p>An Arduino based modulated robot with an alterable configuration designed to adapt to perform various tasks. </p>
-            <p>To design this, a variety of skills from schematic to mechanical design were needed.</p>
-            <img class = "pic2" src = "../portfolio-pictures/internships/clinic/booking-program.png"/>
+            <ul class = "a">
+                <li>Noticed that the booking system for the clinic was done on paper and it was greatly reducing the workflow of the employees there. </li>
+                <li>Proposed to the team and programmed a patient booking software on my own time after work on Java.</li>
+                <li>Created a GUI with JFrame (shown on the image to the left).</li>
+                <li>Ensured that all devices within the clinic could access the booking information by taking advantage of the ethernet network the clinic ran on and creating an XML database that could be accessed from all computers.</li>
+            </ul>
+            <div class = "image-block-lord">
+                <div class = "image-block">
+                    <img src = "../portfolio-pictures/internships/clinic/booking-program.png"/>
+                    <img src = "../portfolio-pictures/internships/clinic/booking-program-2.png"/>
+                </div>
+            </div>
         </div>        
         <div id="footer"></div>
     </body>
