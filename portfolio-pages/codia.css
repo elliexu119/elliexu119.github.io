@@ -106,6 +106,15 @@ html, body {
     font-weight: 300;
 }
 
+@media (max-width:600px){
+  .titleBox h1{
+    font-size: 2rem; 
+  }
+
+  .titleBox h2{
+    font-size: 1rem; 
+  }
+}
 
 embed{
     width: 80vw; 

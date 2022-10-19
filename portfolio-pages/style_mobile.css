@@ -2,7 +2,12 @@
     .block h1 {
         font-size: 2rem; 
     }
-    .block p, li{
+
+    .block p{
+        font-size: 1rem;        
+    }
+
+    .block li{
         font-size: 1rem;        
     }
 
@@ -20,5 +25,17 @@
 
     .comment h1{
         font-size: 2rem; 
+    }
+
+    .content p{
+        font-size: 1rem; 
+    }
+
+    .award{
+        min-width: 100px; 
+    }
+
+    .award p{
+        font-size: 0.8rem;
     }
   }
