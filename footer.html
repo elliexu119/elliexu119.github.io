@@ -1,4 +1,10 @@
 <style>
+    :root{
+        --github-icon: "";
+        --email-icon: "";
+        --linkedin-icon: "";
+
+    }
     .rowFrame {
         font-family: 'Montserrat', sans-serif;
         overflow: auto; 
@@ -58,23 +64,35 @@
         padding: 0; 
     }
 
+    #contactsGithub img{
+        content: var(--github-icon);
+    }
+
+    #contactsEmail img {
+        content: var(--email-icon);
+    }
+
+    #contactsLinkedin img {
+        content: var(--linkedin-icon); 
+    }
+
 </style>
 
 <div class="rowFrame" id = "contacts"> 
-    <column>
-        <img src = "./portfolio-pictures/iconv2/github.png">
+    <column id = "contactsGithub">
+        <img>
         <h2>Github</h2>
         <a target = "_blank" class="btn btn-success" href = "https://github.com/elliexu119" >github.com/elliexu119</a>
     </column>
 
-    <column>
-        <img src = "./portfolio-pictures/iconv2/email.png">
+    <column id = "contactsEmail">
+        <img>
         <h2>Email</h2>
         <a>elliexu119@gmail.com</a>
     </column>
 
-    <column>
-        <img src = "./portfolio-pictures/iconv2/linkedin.png">
+    <column id = "contactsLinkedin">
+        <img>
         <h2>LinkedIn</h2>
         <a target = "_blank" class="btn btn-success" href = "http://linkedin.com/in/ellie-t-xu" >ellie-t-xu</a>
     </column>
