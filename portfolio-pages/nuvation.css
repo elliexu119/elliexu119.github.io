@@ -1,0 +1,84 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+@media (max-width:575.98px){
+    img{
+        display: block; 
+        width: 80vw; 
+        padding-top: 10px; 
+        padding-bottom: 10px;
+    }
+}
+
+.titlePage{
+    background-image: linear-gradient(rgb(27, 52, 69), black); 
+
+    height: 50vh; 
+    text-align: center; 
+    padding-top: 20vh; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+
+}
+
+.titlePage h1{
+    color: var(--highlight-color);
+    font-weight: var(--font-weight);
+    font-size: 2rem;
+}
+
+.titlePage .subtitle{
+    color: gray; 
+    size: 1rem; 
+}
+
+hr{
+    margin-top: 0; 
+    width: 50%; 
+    height:1px; 
+    border-width:0; 
+    background-color:lightgray;
+}
+
+.block{
+    padding-top: 10vh; 
+    background-color: black; 
+}
+
+.downArrow {
+    position: absolute;
+    border: solid #00e6e6;
+    border-width: 0 1vh 1vh 0;
+    display: inline-block;
+    padding: 1vh;
+    transform: rotate(45deg) translateX(-5px);
+    margin-top: 3vh;
+  }
+  
+  .downArrow:hover{
+    margin-top: 4vh;
+  }
+  
+
+  .company-website-block {
+   text-align: center;  
+  }
+
+  .company-website-block .description{
+    color: white; 
+    display: inline-block; 
+    max-width: 250px; 
+  }
+
+  .company-website-block img{
+    display: inline-block; 
+    max-width: 500px; 
+    background-color: white;
+  }
+
+  .company-website-block a{
+    text-decoration: none;
+    text-align: center;
+  }

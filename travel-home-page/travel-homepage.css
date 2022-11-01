@@ -1,0 +1,44 @@
+:root{
+  --font-color: white; 
+  --highlight-color: #00e6e6;
+  --background-color: rgb(254, 255, 236); 
+  --font-color-inverse: black; 
+  --subtitle-color: rgb(209, 209, 209); 
+  --font-weight: 100; 
+
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  margin: 0; 
+}
+
+.navigation{
+  padding-top: 30px;  
+  padding-bottom: 30px; 
+  padding-left: 35px;
+  padding-right: 35px; 
+  background-color: var(--background-color);
+  overflow-x: auto; 
+  white-space: nowrap;
+  
+}
+
+.navigation a{
+  text-decoration: none;
+  color: var(--highlight-color);
+  font-weight: 500;
+  font-size: 2rem; 
+  margin-left: 35px;
+  margin-right: 35px; 
+  
+}
+
+.map-container{
+    height: 80vh; 
+    width: 100%; 
+}
+
